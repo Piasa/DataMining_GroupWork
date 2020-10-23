@@ -1,0 +1,153 @@
+\documentclass[12pt,arial,a4paper]{article}
+\renewcommand{\rmdefault}{phv} % Arial
+\renewcommand{\sfdefault}{phv} % Arial
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{alphabeta} 
+\usepackage{subfiles} 
+\usepackage[pdftex]{graphicx}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+
+\usepackage{My_Preamble}
+
+
+\linespread{1.06}
+\setlength{\parskip}{8pt plus2pt minus2pt}
+
+\widowpenalty 10000
+\clubpenalty 10000
+
+\newcommand{\eat}[1]{}
+\newcommand{\HRule}{\rule{\linewidth}{0.6mm}}
+
+
+
+\usepackage[official]{eurosym}
+\usepackage{enumitem}
+\setlist{nolistsep,noitemsep}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cite}
+\usepackage{lipsum}
+
+
+\begin{document}
+
+%======================首页开始=================================
+\begin{titlepage}
+\begin{center}
+
+% Top 
+\includegraphics[width=0.55\textwidth]{logo.png}~\\[2cm]
+
+
+% Title===================== 标题行=========================
+ \HRule \\ \linespread{0.18}\selectfont
+ \rule{159.32mm}{.1pt}%
+%\HRule 
+\\[0.4cm]
+{ \LARGE 
+  \textbf{Project Report for CPT402}\\[0.4cm]
+}
+\rule{159.32mm}{.1pt}%
+\\
+\linespread{0.25}\selectfont
+ \HRule \\[0.5cm]
+\textsc{\large CPT402(S1) - Project Proposal}\\[0.3cm]
+
+\vfill
+
+\textsc{\small Edited by}\\[0.3cm]
+% Author========== 作者行===================================
+\textsc{ \LARGE
+  Yujie Geng \\[0.3cm]
+  Ziyu Guan\\[0.3cm]
+  Wanting Du\\[0.3cm]
+  Bokai Fan\\[0.3cm]
+  Xinye Du\\[0.3cm]
+  Juntong Fan\\[0.3cm]
+ Yiyan Gao \\[0.3cm]
+}
+
+
+\vfill
+%================首页末尾===================================
+\textsc{\large \today }\\[0.3cm]
+\textsc{\large Xi'an Jiaotong Liverpool University}\\[0.4cm]
+
+ 
+\end{center}
+\end{titlepage}
+
+%===========================首页到此结束=========================
+%摘要
+%
+%\begin{abstract}
+%\lipsum[1-2]
+%\addtocontents{toc}{\protect\thispagestyle{empty}}
+%\end{abstract}
+
+\newpage
+
+
+
+%========================目录===================================
+\tableofcontents
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\newpage
+\setcounter{page}{1}
+
+%=======================正文部分===============================
+%==============================================================
+\section{Introduction}
+%1.背景及介绍
+\subfile{Sections/1.Introduction}
+
+
+
+\section{Problem Statement}
+%2.问题阐述
+\subfile{Sections/2.ProblemStatement}
+
+
+
+\section{Relevant Work}
+%3.相关工作
+\subfile{Sections/3.RelevantWork}
+
+
+
+\section{The Data}
+%4.数据描述
+\subfile{Sections/4.TheData}
+
+
+\section{Methodology}
+%5.方法论
+\subfile{Sections/5.Methodology}
+
+
+
+\section{Discussion}
+%6.讨论
+\subfile{Sections/6.Discussion}
+
+
+
+\section{Gant Chart}
+%7.甘特图
+\subfile{Sections/7.GantChart}
+
+
+
+
+%============================分界线==============================
+%=======================下面的是引用文献=========================
+
+
+
+%论文的引用以及引用格式
+\bibliographystyle{unsrt}
+\bibliography{refs}
+
+
+\end{document} 
