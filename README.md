@@ -1,7 +1,7 @@
 # DataMining_GroupWork©
 
 
-worke collaboratively with :
+work collaboratively with :
 - **Ziyu Guan**
 - **Wanting Du**
 - **Bokai Fan**
@@ -13,7 +13,7 @@ worke collaboratively with :
 
 
 
-Note: The results of this work belong to the team members. Without the consent of the members, this work shall not be publicly disseminated and plagiarized. Otherwise will bear legal responsibility.
+Note: *The results of this work belong to the team members. Without the consent of the members, this work shall not be publicly disseminated and plagiarized. Otherwise will bear legal responsibility.*
 
 
 
